@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.main{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    /* width: 336px; */
+    width: 21.2%;
+    margin: 232px auto;
+}
+.yellow-part{
+    width: 336px;
+    height: 28px;
+    background: #FFDC40;
+    border-radius: 10px 10px 0 0;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
+.photo{
+    margin: 1px 280px;
+}
+.enter{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    width: 286px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+}
+.img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.delete{
+    margin-left: 200px;
+}
+.input{
+    display: none;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: 77px;
+    margin-bottom: -17px;
+}
+.add{
+    width: 150px;
+    height: 42px;
+    background: #833AE0;
+    border-radius: 71px;
+    margin: 18px auto;
+    display: flex;
+}
+.add-sign:hover{
+    cursor: pointer;
+}
+.add-sign{
+    width: 42px;
+    height: 42px;
+    background: #9953F1;
+    border-radius: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-sign p{
+    color: white;
+}
+.text{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin: auto;
+}
+.text:hover{
+    cursor: pointer;
+}
