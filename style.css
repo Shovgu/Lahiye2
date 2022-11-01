@@ -2,8 +2,7 @@
 .main{
     border: 1px solid #C4C4C4;
     border-radius: 10px;
-    /* width: 336px; */
-    width: 21.2%;
+    width: 336px;
     margin: 232px auto;
 }
 .yellow-part{
@@ -20,22 +19,39 @@
 .photo{
     margin: 1px 280px;
 }
+span:hover{
+    cursor: pointer;
+}
+.photo:hover{
+    cursor: pointer;
+}
 .enter{
     border: 1px solid #C4C4C4;
     border-radius: 10px;
     width: 286px;
-    height: 40px;
     margin: auto;
     display: flex;
 }
-.img{
-    justify-content: center;
-    align-items: center;
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    justify-content: space-between;
     display: flex;
 }
-.delete{
-    margin-left: 200px;
+.list{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+
+   padding: 10px 0;
 }
+.img{
+    position: relative;
+    top: 15px;
+    left: -25px;
+}  
 .input{
     display: none;
     border-color: black;
