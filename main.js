@@ -2,9 +2,9 @@ const addSign=document.querySelector(".add-sign");
 const input=document.querySelector(".input");
 const text=document.querySelector(".text");
 const ul=document.querySelector("ul");
-const img1=document.querySelector(".img");
 const span=document.querySelectorAll("span");
 const photo=document.querySelector(".photo");
+const photo1=document.querySelector(".photo1");
 const myList=document.getElementById("myList");
 addSign.addEventListener("click",()=>{
     input.style.display="block";
@@ -20,9 +20,7 @@ text.addEventListener("click",()=>{
         let span=document.createElement("span");
         let img=document.createElement("img");
         img.setAttribute("src","img/Group_77.png");
-        // span.className="myphoto";
         img.setAttribute("class","myphoto");
-        span.style.display="block";
         li.style.listStyleType="none";
         span.append(img);
         li.append(span);
@@ -30,33 +28,46 @@ text.addEventListener("click",()=>{
         input.value="";
     }
 });
-// const myphoto=document.querySelectorAll("span>img");
-// myphoto.addEventListener("click",()=>{
-//     myphoto.src="./img/Group_70.png";
-// })
-
-const remove=document.getElementsByClassName("myphoto");
-remove.addEventListener("click",()=>{
-    for(let i =0;i<remove.length;i++){
-    remove[i].onclick=function(){
-        let mainElement=this.parentElement;
-        mainElement.style.display="none";
-    }
-}
-})
-
 // Removing of items
+myList.addEventListener("click",(e)=>{
+        
+   if(e.target.tagName="IMG"){
+    e.target.parentElement.parentElement.remove()
+   }
+})
+// Sorting of items
 photo.addEventListener("click",()=>{
+    photo.style.display="none";
+    photo1.style.display="block";
     let arr=[];
     const info=[...myList?.children];
     info.forEach(item=>{
         arr.push(item.innerHTML);
-    })
+    });
     arr.sort();
     myList.innerHTML="";
     arr.forEach(item=>{
-        let liS=`<li>${item}<li>`;
+        let liS=`<li>${item}</li>`;
         myList.innerHTML+=liS;
-    })
-
-})
+    });
+});
+photo1.addEventListener("click",()=>{
+    photo1.style.display="none";
+    photo.style.display="block";
+    let arr=[];
+    const info=[...myList?.children];
+    info.forEach(item=>{
+        arr.push(item.innerHTML);
+    });
+    arr.sort();
+    arr.reverse();
+    myList.innerHTML="";
+    arr.forEach(item=>{
+        let liS=`<li>${item}</li>`;
+        myList.innerHTML+=liS;
+    });
+});
+function darkMode(){
+    let element=document.body;
+    element.classList.toggle("dark-mode");
+};
