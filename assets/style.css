@@ -1,17 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-.dark-mode{
-    background-color: black;
+body{
+    background-color: blanchedalmond;
+}
+.az,.ru,.en{
+    text-align: end;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    width: 30px;
+}
+.az{
+    margin-left: 93%;
 }
 .main{
     border: 1px solid black;
     border-radius: 10px;
     width: 336px;
-    margin: 232px auto;
+    margin: 230px auto;
+    background-color: white;
 }
 .yellow-part{
     width: 336px;
     height: 28px;
-    background: #FFDC40;
+    background-color: #FFDC40;
     border-radius: 10px 10px 0 0;
 }
 .title{
@@ -65,7 +75,7 @@ li{
 .add{
     width: 150px;
     height: 42px;
-    background: #833AE0;
+    background-color: #833AE0;
     border-radius: 71px;
     margin: 18px auto;
     display: flex;
@@ -76,7 +86,7 @@ li{
 .add-sign{
     width: 42px;
     height: 42px;
-    background: #9953F1;
+    background-color: #9953F1;
     border-radius: 71px;
     display: flex;
     align-items: center;
@@ -90,7 +100,7 @@ li{
     display: flex;
     align-items: center;
     font-family: 'Roboto';
-    font-size: 14px;
+    font-size: 17px;
     margin: auto;
 }
 .text:hover{
