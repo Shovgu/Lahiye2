@@ -6,7 +6,7 @@ body{
     text-align: end;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    width: 30px;
+    width: 2%;
 }
 .az{
     margin-left: 93%;
@@ -36,7 +36,7 @@ body{
     margin: 1px 280px;
     display: none;
 }
-.photo,.photo1,span:hover{
+.photo,.photo1,span,.text:hover{
     cursor: pointer;
 }
 .enter{
@@ -103,7 +103,4 @@ li{
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     margin: auto;
-}
-.text:hover{
-    cursor: pointer;
 }

@@ -6,7 +6,7 @@ const text = document.querySelector(".text");
 const input = document.querySelector(".input");
 const span = document.querySelectorAll("span");
 const ul = document.querySelector("ul");
-text.addEventListener("click", () => {
+function process() {
     if (input.value == "" || input.value == " ") {
         alert("Please add something!!!");
         input.style.display = "none";
@@ -23,8 +23,9 @@ text.addEventListener("click", () => {
         li.append(span);
         ul.append(li);
         input.value = "";
-    }
-});
+    };
+};
+text.addEventListener("click", process);
 const myList = document.getElementById("myList");
 myList.addEventListener("mouseover", (e) => {
     if (e.target.tagName = "img") {
@@ -87,6 +88,12 @@ photo1.addEventListener("mouseover", () => {
 });
 photo1.addEventListener("mouseout", () => {
     photo1.src = "./assets/img/sort2.png";
+});
+// Add with Enter
+input.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") {
+        process();
+    };
 });
 // AZ
 const az = document.querySelector(".az");
